@@ -17,7 +17,7 @@ In order to name the hotfix branch, you should follow a convention that clearly 
      ```
    - Create a new branch for hotfix.
      ```sh
-     git checkout -b hotfix/Navbar-issue
+     git checkout -b hotfix/navbar-issue
      ```
 
 2. **Implement the Hotfix:**
@@ -31,7 +31,7 @@ In order to name the hotfix branch, you should follow a convention that clearly 
 3. **Push the Hotfix Branch to the Remote Repository:**
    - Push hotfix branch to the remote repository.
      ```sh
-     git push origin hotfix/payment-issue
+     git push origin hotfix/navbar-issue
      ```
 
 4. **Create a Pull Request (PR):**
