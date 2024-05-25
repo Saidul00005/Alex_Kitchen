@@ -1,6 +1,6 @@
-## Process to submit a Hotfix for "Alex’s Kitchen" Project
+## Process to submit a Hotfix for "Alex Kitchen" Project
 
-When you work on a project like "Alex’s Kitchen" and want to use Git for version control, then you should follow these conventions and steps to submit a hotfix:
+When you work on a project like "Alex Kitchen" and want to use Git for version control, then you should follow these conventions and steps to submit a hotfix:
 
 ### Naming the Hotfix Branch
 
