@@ -73,20 +73,22 @@ By following these steps, you can effectively manage the submission and merging 
 ### Dataset:
 
 ```json
-const Menu =
+{
+"Menu":
 {
   "Vegetarian": {
     "Starters": [
-      {id: 1, name: "Salad"},
-      {id: 2, name: "Veg Burger"}
+      {"id": 1, "name": "Salad"},
+      {"id": 2, "name": "Veg Burger"}
     ]
   },
   "Non-Vegetarian": {
     "Main Course": [
-      {id: 4, name: "Chicken Wings"},
-      {id: 5, name: "Beef Burger"}
+      {"id": 4, "name": "Chicken Wings"},
+      {"id": 5, "name": "Beef Burger"}
     ]
   }
+}
 }
 ```
 
@@ -110,32 +112,34 @@ const Menu =
 - Let's think we want to add another object in `Menu` object which is `Foods for your pet` which has two arrays `Dog` and `Cat` where you can find more objects.Let's see the look of this update:
 
   ```json
-  const Menu =
+  {
+  "Menu":
   {
     "Vegetarian": {
       "Starters": [
-        {id: 1, name: "Salad"},
-        {id: 2, name: "Veg Burger"}
+        {"id": 1, "name": "Salad"},
+        {"id": 2, "name": "Veg Burger"}
       ]
     },
     "Non-Vegetarian": {
       "Main Course": [
-        {id: 4, name: "Chicken Wings"},
-        {id: 5, name: "Beef Burger"}
+        {"id": 4, "name": "Chicken Wings"},
+        {"id": 5, "name": "Beef Burger"}
       ]
     },
     "Food for your pet": {
       "Dog": [
-        {id: 6, name: "Chicken"},
-        {id: 7, name: "Beef"}
+        {"id": 6, "name": "Chicken"},
+        {"id": 7, "name": "Beef"}
       ],
       "Cat": [
-        {id: 8, name: "Fish"},
-        {id: 9, name: "Meat"},
-        {id: 10, name: "Milk"}
+        {"id": 8, "name": "Fish"},
+        {"id": 9, "name": "Meat"},
+        {"id": 10, "name": "Milk"}
       ],
 
     }
+  }
   }
   ```
 
