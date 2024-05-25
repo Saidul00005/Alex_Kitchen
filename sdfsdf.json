@@ -1,0 +1,17 @@
+{
+"Menu":
+{
+  "Vegetarian": {
+    "Starters": [
+      {"id": 1, "name": "Salad"},
+      {"id": 2, "name": "Veg Burger"}
+    ]
+  },
+  "Non-Vegetarian": {
+    "Main Course": [
+      {"id": 4, "name": "Chicken Wings"},
+      {"id": 5, "name": "Beef Burger"}
+    ]
+  }
+}
+}
