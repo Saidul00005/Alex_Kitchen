@@ -66,3 +66,77 @@ In order to name the hotfix branch, you should follow a convention that clearly 
      ```
 
 By following these steps, you can effectively manage the submission and merging of a hotfix in a project using Git for version control.
+
+
+## An organized example dataset for using in a project like "Alex Kitchen"
+
+### Dataset:
+
+```json
+const Menu =
+{
+  "Vegetarian": {
+    "Starters": [
+      {id: 1, name: "Salad"},
+      {id: 2, name: "Veg Burger"}
+    ]
+  },
+  "Non-Vegetarian": {
+    "Main Course": [
+      {id: 4, name: "Chicken Wings"},
+      {id: 5, name: "Beef Burger"}
+    ]
+  }
+}
+```
+
+### Dataset description:
+
+- Here, `Menu` is an object which has two other sub objects:
+  - `Vegetarian`
+  - `Non-Vegetarian`
+- In `Vegetarian` object, there is an array of `Starters` which holds two objects that holds two properties:
+  - `id`
+  - `menu`
+- In `Non-Vegetarian` object, there is an array of `Main course` which holds two objects that holds two properties:
+  - `id`
+  - `menu`
+
+### Dataset Modification technique:
+
+- If you want, you can add more objects like `Vegetarian` and `Non-Vegetarian` in Menu object.
+- If you want, you can have more arrays like `Starters` and `Main Course` in `Vegetarian` and `Non-Vegetarian` object.
+- If you want, you can also have more properties like `id` and `name` in objects of `Starters` and `Main Course` object.
+- Let's think we want to add another object in `Menu` object which is `Foods for your pet` which has two arrays `Dog` and `Cat` where you can find more objects.Let's see the look of this update:
+
+  ```json
+  const Menu =
+  {
+    "Vegetarian": {
+      "Starters": [
+        {id: 1, name: "Salad"},
+        {id: 2, name: "Veg Burger"}
+      ]
+    },
+    "Non-Vegetarian": {
+      "Main Course": [
+        {id: 4, name: "Chicken Wings"},
+        {id: 5, name: "Beef Burger"}
+      ]
+    },
+    "Food for your pet": {
+      "Dog": [
+        {id: 6, name: "Chicken"},
+        {id: 7, name: "Beef"}
+      ],
+      "Cat": [
+        {id: 8, name: "Fish"},
+        {id: 9, name: "Meat"},
+        {id: 10, name: "Milk"}
+      ],
+
+    }
+  }
+  ```
+
+    
