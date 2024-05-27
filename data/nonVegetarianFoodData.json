@@ -1,0 +1,14 @@
+[
+  {
+    "id": 4,
+    "name": "Chicken Wings",
+    "type": "Main Course",
+    "description": "Indulge in our savory chicken wings, perfectly seasoned and cooked to a crispy, golden brown. A delicious treat for any occasion."
+  },
+  {
+    "id": 5,
+    "name": "Beef Burger",
+    "type": "Main Course",
+    "description": "Satisfy your cravings with our juicy beef burger, crafted with premium beef, fresh lettuce, ripe tomatoes, and our special sauce, all sandwiched between soft buns. A hearty delight for meat lovers."
+  }
+]

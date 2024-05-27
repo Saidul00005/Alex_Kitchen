@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Salad",
+    "type": "Starter",
+    "description": "Enjoy our fresh, crisp salad made with a delightful mix of greens, vegetables, and a light, flavorful dressing. Perfect for a healthy and refreshing meal."
+  },
+  {
+    "id": 2,
+    "name": "Veg Burger",
+    "type": "Starter",
+    "description": "Savor our delicious veg burger, packed with a flavorful vegetable patty, fresh lettuce, tomato, and a tangy sauce, all nestled in a soft, toasted bun. A perfect choice for a satisfying and tasty vegetarian meal."
+  }
+]

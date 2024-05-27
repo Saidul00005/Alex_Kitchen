@@ -9,7 +9,7 @@ const VegetarianMenu = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center mt-8">
-        <CardItem />
+        <CardItem/>
       </div>
     </>
   );

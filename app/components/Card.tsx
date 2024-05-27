@@ -1,8 +1,12 @@
 import React from "react";
 import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
 
-export default function CardItem() {
+
+  
+const CardItem = () =>{
+  
   return (
+
     <Card className="max-w-[400px]">
       <CardHeader className="flex gap-3">
         <Image
@@ -19,7 +23,7 @@ export default function CardItem() {
       </CardHeader>
       <Divider/>
       <CardBody>
-        <p>Make beautiful websites regardless of your design experience.</p>
+        <p></p>
       </CardBody>
       <Divider/>
       <CardFooter>
@@ -34,3 +38,5 @@ export default function CardItem() {
     </Card>
   );
 }
+
+export default CardItem;
