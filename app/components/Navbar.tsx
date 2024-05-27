@@ -18,9 +18,10 @@ import {
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { ChevronDown } from "@/app/components/utils/Icons/chevron-down";
 
+
 const Navigationbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const menuItems = ["About", "Blogs", "Projects"];
+  const menuItems = ["Home", "About us", "Menu",];
 
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
@@ -134,24 +135,27 @@ const Navigationbar = () => {
             >
               <DropdownItem
                 key="Project type 1"
+                href="/menuItems/vegetarianMenu"
                 description="Explore a delightful range of vegetarian dishes, crafted to satisfy your taste buds with fresh and flavorful ingredients."
                 startContent="🥔🥕"
               >
-                Vegetarian
+              Vegetarian
               </DropdownItem>
               <DropdownItem
                 key="Project type 2"
+                href="/menuItems/nonVegetarianMenu"
                 description="Discover a variety of non-vegetarian dishes, featuring hearty and delicious options made with premium meats and seafood."
                 startContent="🍗🥩"
               >
-                Non-vegetarian
+                 Non-vegetarian
               </DropdownItem>
               <DropdownItem
                 key="Project type 3"
+                href="/menuItems/petFoodMenu"
                 description="Browse our selection of nutritious and tasty food options, specially formulated to keep your pet healthy and happy."
                 startContent="🐶🐱"
               >
-                Pet food
+                Pet Food Items
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -162,45 +166,20 @@ const Navigationbar = () => {
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                className="w-full"
-                color={
-                  index === 2
-                    ? "warning"
-                    : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
-                {item}
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </NavbarMenu>
-        <NavbarMenu>
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                className="w-full"
-                color={
-                  index === 2
-                    ? "warning"
-                    : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
-                href={item}
-                size="lg"
-              >
-                {item}
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              color={"foreground"}
+              className="w-full"
+              href={item === 'Home' ? '/' : item ==='About us' ? '/aboutUs' : item === 'Menu' ? '/menuItems': '#'}
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+        
       </Navbar>
       <div className="flex justify-center">
         <div className="hidden md:block dark:bg-green-800 bg-slate-800  dark:opacity-75 opacity-15 h-1 w-3/4"></div>

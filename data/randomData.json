@@ -1,0 +1,29 @@
+{
+    "Menu":
+    {
+      "Vegetarian": {
+        "Starters": [
+          {"id": 1, "name": "Salad"},
+          {"id": 2, "name": "Veg Burger"}
+        ]
+      },
+      "Non-Vegetarian": {
+        "Main Course": [
+          {"id": 4, "name": "Chicken Wings"},
+          {"id": 5, "name": "Beef Burger"}
+        ]
+      },
+      "Food for your pet": {
+        "Dog": [
+          {"id": 6, "name": "Chicken"},
+          {"id": 7, "name": "Beef"}
+        ],
+        "Cat": [
+          {"id": 8, "name": "Fish"},
+          {"id": 9, "name": "Meat"},
+          {"id": 10, "name": "Milk"}
+        ]
+    
+      }
+    }
+}
