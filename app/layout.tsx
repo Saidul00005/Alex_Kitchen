@@ -6,6 +6,7 @@ import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import NavigationBar from "./components/Navbar";
 import FooterPart from "./components/Footer";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
