@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Salad",
+    "type": "Starter",
+    "section":"vegetarian",
+    "description": "Enjoy our fresh, crisp salad made with a delightful mix of greens, vegetables, and a light, flavorful dressing. Perfect for a healthy and refreshing meal."
+  },
+  {
+    "id": 2,
+    "name": "Vegetable Burger",
+    "type": "Starter",
+    "section":"vegetarian",
+    "description": "Savor our delicious veg burger, packed with a flavorful vegetable patty, fresh lettuce, tomato, and a tangy sauce, all nestled in a soft, toasted bun. A perfect choice for a satisfying and tasty vegetarian meal."
+  },
+  {
+    "id": 4,
+    "name": "Chicken Wings",
+    "type": "Main Course",
+    "section":"nonVegetarian",
+    "description": "Indulge in our savory chicken wings, perfectly seasoned and cooked to a crispy, golden brown. A delicious treat for any occasion."
+  },
+  {
+    "id": 5,
+    "name": "Beef Burger",
+    "type": "Main Course",
+    "section":"nonVegetarian",
+    "description": "Satisfy your cravings with our juicy beef burger, crafted with premium beef, fresh lettuce, ripe tomatoes, and our special sauce, all sandwiched between soft buns. A hearty delight for meat lovers."
+  },
+  {
+    "id": 6,
+    "name": "Chicken",
+    "type": "none",
+    "section":"dog",
+    "description": "Treat your furry friend to our nutritious chicken dog food, made with high-quality ingredients to provide essential nutrients for a healthy and happy pup. Tail-wagging goodness they'll love."
+  },
+  {
+    "id": 7,
+    "name": "Beef",
+    "type": "none",
+    "section":"dog",
+    "description": "Give your canine companion a tasty meal with our beef dog food, packed with protein-rich beef and wholesome ingredients to keep them energized and satisfied. Tail-wagging goodness for a happy, healthy dog."
+  },
+  {
+    "id": 8,
+    "name": "Fish",
+    "type": "none",
+    "section":"cat",
+    "description": "Indulge your feline friend's love for seafood with our fish-flavored cat food, made from premium fish ingredients to satisfy their cravings and provide essential nutrients for a healthy, happy cat. Purr-worthy goodness they'll adore."
+  },
+  {
+    "id": 9,
+    "name": "Meat",
+    "type": "none",
+    "section":"cat",
+    "description": "Treat your kitty to our meat-flavored cat food, crafted with tender, juicy meat to provide the protein and essential nutrients they need for optimal health and vitality. A savory meal to keep your cat purring with delight."
+  },
+  {
+    "id": 10,
+    "name": "Milk",
+    "type": "none",
+    "section":"cat",
+    "description": "Satisfy your cat's love for dairy with our milk-flavored cat food, formulated with the creamy goodness of milk to entice their taste buds and provide essential nutrients for their well-being. A delicious treat for your feline friend."
+  }
+]
