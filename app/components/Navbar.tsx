@@ -134,28 +134,36 @@ const Navigationbar = () => {
               }}
             >
               <DropdownItem
-                key="Project type 1"
-                href="/menuItems/vegetarianMenu"
+                key="Vegetarian Food Items."
+                href="/menuItems/Vegetarian"
                 description="Explore a delightful range of vegetarian dishes, crafted to satisfy your taste buds with fresh and flavorful ingredients."
                 startContent="🥔🥕"
               >
               Vegetarian
               </DropdownItem>
               <DropdownItem
-                key="Project type 2"
-                href="/menuItems/nonVegetarianMenu"
+                key="Non Vegetarian Food Items."
+                href="/menuItems/NonVegetarian"
                 description="Discover a variety of non-vegetarian dishes, featuring hearty and delicious options made with premium meats and seafood."
                 startContent="🍗🥩"
               >
                  Non-vegetarian
               </DropdownItem>
               <DropdownItem
-                key="Project type 3"
-                href="/menuItems/petFoodMenu"
-                description="Browse our selection of nutritious and tasty food options, specially formulated to keep your pet healthy and happy."
-                startContent="🐶🐱"
+                key="Dog Food Items."
+                href="/menuItems/Dog"
+                description="High-quality, nutritious dog food options to keep your pet healthy and happy."
+                startContent="🐶🐕"
               >
-                Pet Food Items
+                Dog Food Items
+              </DropdownItem>
+              <DropdownItem
+                key="Cat Food Items."
+                href="/menuItems/Cat"
+                description="Premium cat food designed to meet your feline's dietary needs and preferences."
+                startContent="🐱🐈"
+              >
+                Cat Food Items
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>

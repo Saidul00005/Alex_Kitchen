@@ -12,10 +12,10 @@ interface FoodItem {
 
 interface FoodStoreState {
   foodItems: FoodItem[];
-  vegetarianFoodItems: FoodItem[];
-  nonVegetarianFoodItems: FoodItem[];
-  dogFoodItems: FoodItem[];
-  catFoodItems: FoodItem[];
+  VegetarianFoodItems: FoodItem[];
+  NonVegetarianFoodItems: FoodItem[];
+  DogFoodItems: FoodItem[];
+  CatFoodItems: FoodItem[];
   addItem: (name: string, type: string, section: string, description: string) => void;
   editItem: (id: number, name: string, description: string) => void;
   deleteItem: (id: number) => void;
@@ -26,20 +26,20 @@ export const useFoodStore = create<FoodStoreState>()(
     persist(
       (set) => ({
         foodItems: FoodItemsData,
-        vegetarianFoodItems: FoodItemsData.filter(item => item.section === 'vegetarian'),
-        nonVegetarianFoodItems: FoodItemsData.filter(item => item.section === 'nonVegetarian'),
-        dogFoodItems: FoodItemsData.filter(item => item.section === 'dog'),
-        catFoodItems: FoodItemsData.filter(item => item.section === 'cat'),
+        VegetarianFoodItems: FoodItemsData.filter(item => item.section === 'vegetarian'),
+        NonVegetarianFoodItems: FoodItemsData.filter(item => item.section === 'nonVegetarian'),
+        DogFoodItems: FoodItemsData.filter(item => item.section === 'dog'),
+        CatFoodItems: FoodItemsData.filter(item => item.section === 'cat'),
         addItem: (name, type, section, description) => {
           const newItem = { id: Math.ceil(Math.random() * 10000) + 1, name, type, section, description };
           set((state) => {
             const newFoodItems = [...state.foodItems, newItem];
             return {
               foodItems: newFoodItems,
-              vegetarianFoodItems: newFoodItems.filter(item => item.section === 'vegetarian'),
-              nonVegetarianFoodItems: newFoodItems.filter(item => item.section === 'nonVegetarian'),
-              dogFoodItems: newFoodItems.filter(item => item.section === 'dog'),
-              catFoodItems: newFoodItems.filter(item => item.section === 'cat'),
+              VegetarianFoodItems: newFoodItems.filter(item => item.section === 'vegetarian'),
+              NonVegetarianFoodItems: newFoodItems.filter(item => item.section === 'nonVegetarian'),
+              DogFoodItems: newFoodItems.filter(item => item.section === 'dog'),
+              CatFoodItems: newFoodItems.filter(item => item.section === 'cat'),
             };
           });
         },
@@ -50,10 +50,10 @@ export const useFoodStore = create<FoodStoreState>()(
             );
             return {
                 foodItems: newFoodItems,
-                vegetarianFoodItems: newFoodItems.filter(item => item.section === 'vegetarian'),
-                nonVegetarianFoodItems: newFoodItems.filter(item => item.section === 'nonVegetarian'),
-                dogFoodItems: newFoodItems.filter(item => item.section === 'dog'),
-                catFoodItems: newFoodItems.filter(item => item.section === 'cat'),
+                VegetarianFoodItems: newFoodItems.filter(item => item.section === 'vegetarian'),
+                NonVegetarianFoodItems: newFoodItems.filter(item => item.section === 'nonVegetarian'),
+                DogFoodItems: newFoodItems.filter(item => item.section === 'dog'),
+                CatFoodItems: newFoodItems.filter(item => item.section === 'cat'),
             };
           });
         },
@@ -62,10 +62,10 @@ export const useFoodStore = create<FoodStoreState>()(
             const newFoodItems = state.foodItems.filter((item) => item.id !== id);
             return {
                 foodItems: newFoodItems,
-                vegetarianFoodItems: newFoodItems.filter(item => item.section === 'vegetarian'),
-                nonVegetarianFoodItems: newFoodItems.filter(item => item.section === 'nonVegetarian'),
-                dogFoodItems: newFoodItems.filter(item => item.section === 'dog'),
-                catFoodItems: newFoodItems.filter(item => item.section === 'cat')
+                VegetarianFoodItems: newFoodItems.filter(item => item.section === 'vegetarian'),
+                NonVegetarianFoodItems: newFoodItems.filter(item => item.section === 'nonVegetarian'),
+                DogFoodItems: newFoodItems.filter(item => item.section === 'dog'),
+                CatFoodItems: newFoodItems.filter(item => item.section === 'cat')
             };
           });
         },
