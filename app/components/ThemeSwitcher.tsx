@@ -1,9 +1,9 @@
-// app/components/ThemeSwitcher.tsx
 "use client";
 
-import {useTheme} from "next-themes";
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
+import { FiSun, FiMoon } from "react-icons/fi"
+import Image from "next/image";
 
 export function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false)
@@ -13,23 +13,22 @@ export function ThemeSwitcher() {
     setMounted(true)
   }, [])
 
-  if(!mounted) return null
-
-  return (
-    <div>
-      <Dropdown>
-      <DropdownTrigger>
-        <Button 
-         variant="bordered" 
-         className="font-mono md:text-lg">
-          Change mode
-        </Button>
-      </DropdownTrigger>
-      <DropdownMenu aria-label="Static Actions">
-        <DropdownItem key="light" onClick={() => setTheme('light')}>Light</DropdownItem>
-        <DropdownItem key="dark" onClick={() => setTheme('dark')}>Dark</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-    </div>
+  if (!mounted) return (
+    <Image
+      src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNGRkZGRkYiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBoZWlnaHQ9IjIwMHB4IiB3aWR0aD0iMjAwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSIyIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIHJ4PSIyIj48L3JlY3Q+PC9zdmc+Cg=="
+      width={36}
+      height={36}
+      sizes="36x36"
+      alt="Loading Light/Dark Toggle"
+      priority={false}
+      title="Loading Light/Dark Toggle" />
   )
+
+  if (theme === 'dark') {
+    return <FiSun onClick={() => setTheme('light')} />
+  }
+
+  if (theme === 'light') {
+    return <FiMoon onClick={() => setTheme('dark')} />
+  }
 };
